@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  chromadb:
+    image: chromadb/chroma       # The Docker image to use
+    container_name: chromadb_container
+    ports:
+      - "8000:8000"              # Map port 8000 on host to container
+    volumes:
+      - ./chromaData:/chroma/chroma  # Mount local directory to container path
+    environment:
+      # Add any environment variables here, if needed
+      # Example: - ENV_VAR=value

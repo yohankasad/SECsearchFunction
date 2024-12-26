@@ -1,7 +1,7 @@
 import os
 
 
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = "Your key goes here"
 
 
 import chromadb
